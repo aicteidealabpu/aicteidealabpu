@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AICTE IDEA Lab | Panjab University, Chandigarh</title>
+  <style>
+    :root{
+      --primary:#0b3c5d;
+      --secondary:#1d70b8;
+      --light:#f5f7fa;
+      --dark:#1f2933;
+      --accent:#e6a700;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif}
+    body{background:#fff;color:var(--dark);line-height:1.6}
+    header{background:var(--primary);color:#fff}
+    .topbar{display:flex;align-items:center;gap:20px;padding:15px 40px}
+    .topbar img{height:60px}
+    nav{background:#06293f}
+    nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center}
+    nav ul li a{display:block;padding:14px 18px;color:#fff;text-decoration:none;font-size:14px}
+    nav ul li a:hover{background:var(--secondary)}
+
+    .hero{background:linear-gradient(rgba(11,60,93,.8),rgba(11,60,93,.8)),url('example.jpg') center/cover;
+      color:#fff;text-align:center;padding:90px 20px}
+    .hero h1{font-size:36px;margin-bottom:10px}
+    .hero p{max-width:800px;margin:auto}
+
+    section{padding:60px 60px}
+    section:nth-child(even){background:var(--light)}
+    h2.section-title{text-align:center;color:var(--primary);margin-bottom:30px}
+
+    .grid{display:grid;gap:25px}
+    .grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    .card h3{color:var(--secondary);margin-bottom:10px}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+
+    .team-card{text-align:center}
+    .team-card img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:10px}
+
+    .calendar{max-width:700px;margin:auto}
+    .calendar ul{list-style:none}
+    .calendar li{padding:12px;border-bottom:1px solid #ddd}
+
+    footer{background:var(--primary);color:#fff;padding:30px;text-align:center;font-size:14px}
+
+    @media(max-width:768px){
+      section{padding:40px 20px}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <img src="example.jpg" alt="PU Logo">
+    <img src="example.jpg" alt="AICTE Logo">
+    <div>
+      <h1>AICTE IDEA Lab</h1>
+      <p>Panjab University, Chandigarh</p>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#vision">Vision & Mission</a></li>
+      <li><a href="#whatwedo">What We Do</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#events">Event Calendar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Innovation • Development • Evaluation • Application</h1>
+  <p>A collaborative platform where academia and industry work together to deliver pioneering solutions for societal and industrial challenges.</p>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About AICTE IDEA Lab</h2>
+  <p style="max-width:900px;margin:auto;text-align:center">
+    The AICTE IDEA (Idea, Development, Evaluation & Application) Lab at Panjab University, Chandigarh, is established to promote hands-on learning, innovation and product visualization by encouraging the application of STEM fundamentals. The lab serves as a bridge between academia and industry, fostering real-world problem solving and multidisciplinary research.
+  </p>
+</section>
+
+<section id="vision">
+  <h2 class="section-title">Vision & Mission</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Vision</h3>
+      <p>To enable a collaborative environment where industry partners with academia for pioneering and impactful technological solutions.</p>
+    </div>
+    <div class="card">
+      <h3>Mission</h3>
+      <ul>
+        <li>Address industrial problems of the northern region with tailored solutions.</li>
+        <li>Provide hands-on opportunities to students, faculty and staff.</li>
+        <li>Enhance technological competencies aligned with real-world needs.</li>
+        <li>Contribute to nation-building and societal advancement.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="whatwedo">
+  <h2 class="section-title">What We Do</h2>
+  <div class="grid grid-3">
+    <div class="card"><h3>Student Development</h3><p>Projects, internships, hackathons and innovation challenges enhancing employability and skills.</p></div>
+    <div class="card"><h3>Faculty Development</h3><p>FDPs, industry-linked research and consultancy to strengthen teaching and research quality.</p></div>
+    <div class="card"><h3>Industry Collaboration</h3><p>Solving real industrial problems through collaboration with MSMEs and startups.</p></div>
+  </div>
+</section>
+
+<section id="facilities">
+  <h2 class="section-title">Facilities & Equipment</h2>
+  <div class="grid grid-2">
+    <div class="card"><h3>Engineering & Electronics</h3><p>3D Printers, Oscilloscopes, ARM Microcontrollers, ESP32/STM32 boards, LabVIEW, DAQ systems and workstations.</p></div>
+    <div class="card"><h3>Mechanical & Prototyping</h3><p>Laser cutter, welding machine, drilling machines, grinders, power tools, precision measuring instruments.</p></div>
+  </div>
+</section>
+
+<section id="team">
+  <h2 class="section-title">Team & Committee Members</h2>
+  <div class="grid grid-3">
+    <div class="card team-card"><img src="example.jpg"><h4>Prof. Renu Vig</h4><p>Chief Patron</p></div>
+    <div class="card team-card"><img src="example.jpg"><h4>Prof. Sukhwinder Singh</h4><p>Chief Mentor</p></div>
+    <div class="card team-card"><img src="example.jpg"><h4>Dr. Gaurav Sapra</h4><p>Faculty Coordinator</p></div>
+    <div class="card team-card"><img src="example.jpg"><h4>Prof. Rajesh Kumar</h4><p>Faculty Co‑Coordinator</p></div>
+    <div class="card team-card"><img src="example.jpg"><h4>Tech Gurus</h4><p>Interdisciplinary Faculty Team</p></div>
+    <div class="card team-card"><img src="example.jpg"><h4>Student Ambassadors</h4><p>PhD & PG Scholars</p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery">
+    <img src="example.jpg">
+    <img src="example.jpg">
+    <img src="example.jpg">
+    <img src="example.jpg">
+  </div>
+</section>
+
+<section id="events">
+  <h2 class="section-title">Event Calendar</h2>
+  <div class="calendar card">
+    <ul>
+      <li><strong>17 Nov 2025:</strong> Inauguration of AICTE IDEA Lab</li>
+      <li><strong>Workshop:</strong> AI, IoT & Industry 4.0</li>
+      <li><strong>Dec 6–9, 2025:</strong> Exhibition at IISF 2025</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>© AICTE IDEA Lab, Panjab University, Chandigarh</p>
+</footer>
+
+<script>
+  // Simple smooth scroll
+  document.querySelectorAll('nav a').forEach(link=>{
+    link.addEventListener('click',e=>{
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
